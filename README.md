@@ -1,2 +1,2 @@
 # OpenDoors
-Ferramenta simples de verificação de portar abertas.
+Ferramenta simples de verificação de portas abertas.
