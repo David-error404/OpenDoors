@@ -1,6 +1,20 @@
 import socket
 from datetime import datetime
 
+# Função para desenhar a porta aberta em ASCII
+def porta_aberta():
+    porta = '''
+         _______
+        |       |
+        |   O   |
+        |       |
+        |_______|
+        /       \
+       /         \
+      /___________\
+    '''
+    print(porta)
+
 # Função para escanear uma faixa de portas
 def escanear_portas(host, portas):
     portas_abertas = []
@@ -31,6 +45,9 @@ def escanear_host(host, inicio_porta, fim_porta):
 
 # Função principal
 if __name__ == "__main__":
+    # Exibir a porta aberta em ASCII
+    porta_aberta()
+
     # Solicitar o host alvo
     host = input("IP ou HOST alvo: ")
     inicio_porta = int(input("Porta inicial: "))
